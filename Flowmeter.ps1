@@ -34,6 +34,7 @@ $count = 0
 $row = 2
 $items = New-Object System.Collections.Generic.List[System.Object]
 
+Write-Host "Flowmeter parser Version 0.2"
 Write-Host -NoNewLine "Working"
 foreach($line in Get-Content $logfile) {
     if ($line.length -gt 1) {
