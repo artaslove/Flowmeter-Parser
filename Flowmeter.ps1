@@ -66,7 +66,7 @@ foreach($line in Get-Content $logfile) {
 Write-Host "Done!"
 
 $savename = Save-FileName -initialDirectory Get-Location
-"Timestamp`tFlow (l/s)`t`tTotal Flow (l):`t=SUM(B2-B$row)*" + [int]$duration.TotalSeconds | out-file -FilePath $savename
+"Timestamp`tFlow (l/s)`t`tTotal Flow (l):`t=SUM(B2:B$row)*" + [int]$duration.TotalSeconds | out-file -FilePath $savename
 foreach ($item in $items) {
  Add-Content -Path $savename -Value ($item)
 }
