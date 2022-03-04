@@ -1,4 +1,4 @@
-﻿# UltraSonic Flowmeter Parser by bonafide@martica.org   https://tonyscc.ca
+﻿# UltraSonic Flowmeter Parser by tonyscomputerconsulting@gmail.com https://tonyscc.ca
 
 Function Get-FileName($initalDirectory) {
 [System.Reflection.Assembly]::LoadWithPartialName("System.windows.forms") | Out-Null
